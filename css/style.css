@@ -1,0 +1,380 @@
+body{
+	box-sizing: border-box;
+}
+body > * {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+a {
+	text-decoration: none;
+}
+.ba-header {
+	height: 652px;
+	width: 100%;
+	background-image: url("../imgs/computer.jpg");
+	background-size: 100% 100%;
+	padding-top: 35px;
+}
+.ba-nav-header {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+    margin-left: 332px;
+}
+.ba-nav-header li {
+	display: inline-block;
+	width: 95px;
+	font-family: Lato, sans-serif;
+	text-align: center;
+}
+.ba-nav-header li:after {
+	content: "";
+    vertical-align: middle;
+	margin-left: 25px;
+    width: 0;
+	height: 20px;
+	display: inline-block;
+	border-right: 1px solid #757a80;
+	transform: skewX(-15deg);
+}
+
+.ba-nav-header li a {
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+}
+.ba-nav-header li a:hover {
+    color: #48bf72;
+}
+@font-face {
+    font-family: BigJohn;
+    src: url(../fonts/bigjohn.otf);
+}
+@font-face {
+    font-family: SlimJoe;
+    src: url(../fonts/slimjoe.otf);
+}
+h1 {
+	color: white;
+    text-align: center;
+    margin-top: 125px;
+    font-family: BigJohn, sans-serif;
+    font-weight: 400;
+
+}
+h2 {
+    font-family: SlimJoe, sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+}
+.ba-button-header {
+    background-color: transparent;
+    width: 140px;
+    height: 40px;
+    border: 2px solid #48bf72;
+    border-radius: 3px;
+    font-family: Lato, sans-serif;
+    display: block;
+    margin: 55px auto 0 auto;
+    color: #48bf72;
+    outline: none;
+}
+.ba-button-header:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ba-button-header:active {
+    background-color: rgba(72, 191, 114, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.ba-nav-portfolio {
+	width: 680px;
+	margin-top: 70px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ba-nav-portfolio li {
+	display: inline-block;
+	margin: 0;
+	border-radius: 2px;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 30px;
+	background-color: #eaeaea;
+	font-family: Lato, sans-serif;
+	text-align: center;
+}
+.ba-nav-portfolio li:hover {
+	background-color: #48bf72;
+}
+
+.ba-nav-portfolio li a {
+	display: block;
+	color: #3c4955;
+	font-size: 14px;
+	padding-top: 5px;
+	height: 30px;
+	font-weight: 700;
+}
+.ba-nav-portfolio li a:hover {
+	color: white;
+}
+.ba-nav-portfolio li:hover a {
+	color: white;
+}
+.ba-portfolio-items {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	border-radius: 7px;
+	margin-top: 25px;
+}
+.ba-portfolio-items img {
+	position: absolute;
+}
+.ba-portfolio-items:nth-child(2) {
+	height: 243px;
+	width: 40%;
+}
+.ba-portfolio-items:nth-child(2) img {
+	margin-top: -30px;
+}
+.ba-portfolio-items:nth-child(3) {
+	height: 243px;
+	margin-left: 30px;
+	width: 56%;
+}
+.ba-portfolio-items:nth-child(3) img {
+	margin-top: -45px;
+}
+.ba-portfolio-items:nth-child(4) {
+	height: 305px;
+	width: 56%;
+}
+.ba-portfolio-items:nth-child(4) img {
+	margin-top: -25px;
+}
+.ba-portfolio-items:nth-child(5) {
+	height: 305px;
+	width: 40%;
+	overflow: hidden;
+	margin-left: 30px;
+}
+.ba-portfolio-items:nth-child(5) img {
+	height: 310px;
+	width: 880px;
+}
+.ba-portfolio-items:hover img {
+	opacity: 0.3;
+}
+.ba-portfolio-items-inner {
+	width: 100%;
+	height: 150%;
+	background-color: #4db772;
+	z-index: 2;
+	margin-top: -15px;
+	padding-top: 60px;
+}
+.ba-portfolio-items-inner p {
+	text-align: center;
+	color: white;
+	font-family: Lato, sans-serif;
+	vertical-align: middle;
+}
+.ba-portfolio-items-inner p:first-child {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.ba-about {
+	margin-top: 70px;
+	background-image: url("../imgs/men-computer.png");
+	height: 360px;
+	background-size: 100% 100%;
+}
+.ba-about-inner {
+	margin-top: 40px;
+	margin-left: 475px;
+	width: 37%;
+	padding-top: 30px;
+}
+.ba-about-inner h3 {
+	margin-bottom: 0;
+	color: white;
+	font-family: Lato, sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+.ba-about-inner h4 {
+	margin-top: 5px;
+	color: white;
+	font-family: Lato, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+.ba-about-inner p {
+	font-size: 12px;
+	color: white;
+	font-family: Lato, sans-serif;
+	line-height: 1.5em;
+}
+.ba-about-inner button {
+	background-color: transparent;
+	width: 120px;
+	height: 30px;
+	border: 2px solid #3c4955;
+	border-radius: 3px;
+	font-family: Lato, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	margin-top: 20px;
+	color: #3c4955;
+	outline: none;
+}
+.ba-about-inner button:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ba-about-inner button:active {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.ba-contact h5 {
+	text-align: center;
+	color: #48bf72;
+	font-family: BigJohn, sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.ba-contact {
+	padding-left: 28%;
+	padding-right: 28%;
+}
+.ba-contact input {
+	color: #a6a5a5;
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	border: 2px solid #3c4955;
+	border-radius: 5px;
+	outline: none;
+}
+.ba-contact input:hover, input:active, input:focus {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ba-contact .ba-contact-user, .ba-contact-email {
+	display: inline-block;
+}
+.ba-contact-input-user, .ba-contact-input-email {
+	width: 285px;
+	height: 35px;
+}
+.ba-contact-input-user {
+	background-image: url(../imgs/icon-user.png);
+	background-repeat: no-repeat;
+	background-size: 35px 31px;
+	padding-left: 45px;
+}
+.ba-contact-input-email {
+	margin-left: 18px;
+	background-image: url(../imgs/icon-email.png);
+	background-repeat: no-repeat;
+	background-size: 35px 31px;
+	padding-left: 45px;
+}
+.ba-contact-input-mail {
+	position: relative;
+	margin-top: 20px;
+	width: 100%;
+	height: 172px;
+	background-image: url(../imgs/icon-message.png);
+	background-repeat: no-repeat;
+	background-size: 35px 170px;
+	padding-left: 45px;
+}
+/* Проблема в плейсхолдере - не могу поднять его вверх в инпуте, line-height не помогает (пришлось делать через следующее свойство).
+Но при вводе текста в инпут он всё равно вводится по центру */
+.ba-contact-input-mail::-webkit-input-placeholder {
+	position: relative;
+	margin-left: 50px;
+}
+.ba-contact button {
+	width: 100%;
+	height: 35px;
+	margin-top: 25px;
+	background-color: #48bf72;
+	border: none;
+	border-radius: 5px;
+	font-family: Lato, sans-serif;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 4px;
+	outline: none;
+}
+.ba-contact button:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ba-contact button:active {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.ba-footer {
+	margin-top: 40px;
+	background-color: #3c4955;
+	height: 120px;
+	padding-top: 30px;
+}
+.ba-footer * {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ba-footer p, a {
+	color: white;
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+}
+.ba-footer p>a {
+	display: inline;
+	vertical-align: top;
+}
+.ba-footer-links {
+	margin-left: 300px;
+}
+.ba-footer-links a {
+	margin-left: 30px;
+}
+
+

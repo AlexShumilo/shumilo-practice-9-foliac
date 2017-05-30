@@ -1,4 +1,4 @@
-body{
+* {
 	box-sizing: border-box;
 }
 body > * {
@@ -45,17 +45,32 @@ a {
 	background-size: 100% 100%;
 	padding-top: 35px;
 }
+.ba-header__top {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.ba-header__top img {
+	width: 170px;
+	height: 90px;
+}
 .ba-nav-header {
-	display: inline-block;
 	vertical-align: top;
 	margin-top: 25px;
-    margin-left: 332px;
+	max-width: 450px;
+}
+.ba-nav-header ul {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .ba-nav-header li {
-	display: inline-block;
 	width: 95px;
 	font-family: Lato, sans-serif;
 	text-align: center;
+	margin-bottom: 15px;
 }
 .ba-nav-header li:after {
 	content: "";
@@ -119,18 +134,21 @@ h2 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .ba-nav-portfolio {
-	width: 680px;
+	max-width: 680px;
 	margin-top: 70px;
 	margin-bottom: 5px;
 	margin-left: auto;
 	margin-right: auto;
 }
+.ba-nav-portfolio ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .ba-nav-portfolio li {
-	display: inline-block;
 	margin: 0;
 	border-radius: 2px;
-	margin-left: 4px;
-	margin-right: 4px;
 	padding-left: 15px;
 	padding-right: 15px;
 	height: 30px;
@@ -223,11 +241,11 @@ h2 {
 	background-image: url("../imgs/men-computer.png");
 	height: 360px;
 	background-size: 100% 100%;
+    padding-left: 50%;
 }
 .ba-about-inner {
 	margin-top: 40px;
-	margin-left: 475px;
-	width: 37%;
+	width: 350px;
 	padding-top: 30px;
 }
 .ba-about-inner h3 {
@@ -293,11 +311,13 @@ h2 {
 .ba-contact input:hover, input:active, input:focus {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.ba-contact .ba-contact-user, .ba-contact-email {
-	display: inline-block;
+.ba-contact-user__inner {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
 .ba-contact-input-user, .ba-contact-input-email {
-	width: 285px;
+	width: 48%;
 	height: 35px;
 }
 .ba-contact-input-user {
@@ -307,15 +327,12 @@ h2 {
 	padding-left: 45px;
 }
 .ba-contact-input-email {
-	margin-left: 18px;
 	background-image: url(../imgs/icon-email.png);
 	background-repeat: no-repeat;
 	background-size: 35px 31px;
 	padding-left: 45px;
 }
-.ba-contact-mail {
-	position: relative;
-}
+
 .ba-contact-textarea-mail {
 	margin-top: 20px;
 	width: 100%;
@@ -351,12 +368,10 @@ h2 {
 .ba-footer {
 	margin-top: 40px;
 	background-color: #3c4955;
-	height: 120px;
+	min-height: 120px;
 	padding-top: 30px;
-}
-.ba-footer * {
-	display: inline-block;
-	vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
 }
 .ba-footer p, a {
 	color: white;
@@ -367,11 +382,15 @@ h2 {
 	display: inline;
 	vertical-align: top;
 }
+
 .ba-footer-links {
-	margin-left: 300px;
+	display: flex;
+    justify-content: space-between;
+    width: 250px;
 }
-.ba-footer-links a {
-	margin-left: 30px;
+.ba-footer-links a:hover img {
+    transform: scale(1.03);
+    transition: all 0.5s;
 }
 
 

@@ -20,15 +20,17 @@
 </head>
 <body>
 	<header class="ba-header">
-		<img src="imgs/logo.png" alt="Logo">
-		<nav class="ba-nav-header">
-			<ul type="none">
-				<li><a href="#">Accueil</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
+		<div class="ba-header__top">
+			<img src="imgs/logo.png" alt="Logo">
+			<nav class="ba-nav-header">
+				<ul type="none">
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 		<h1>VOICI VOTRE PROCHAIN PORTFOLIO</h1>
 		<h2>UN TEMPLATE PSD SIMPLE ET GRATUIT</h2>
 		<button class="ba-button-header">MES TRAVAUX</button>
@@ -86,12 +88,10 @@
 	<section class="ba-contact">
 		<h5>ME CONTACTER</h5>
 		<form action="#" class="ba-contact-user">
-			<input type="text" placeholder="Votre nom" class="ba-contact-input-user">
-		</form>
-		<form action="#" class="ba-contact-email">
-			<input type="text" placeholder="Votre email" class="ba-contact-input-email">
-		</form>
-		<form action="#" class="ba-contact-mail">
+			<div class="ba-contact-user__inner">
+				<input type="text" placeholder="Votre nom" class="ba-contact-input-user">
+				<input type="email" placeholder="Votre email" class="ba-contact-input-email">
+			</div>
 			<textarea type="text" placeholder="Votre message" class="ba-contact-textarea-mail"></textarea>
 		</form>
 		<button>ENVOYER</button>

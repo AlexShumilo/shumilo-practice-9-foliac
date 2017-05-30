@@ -1,4 +1,4 @@
-body{
+* {
 	box-sizing: border-box;
 }
 body > * {
@@ -45,17 +45,32 @@ a {
 	background-size: 100% 100%;
 	padding-top: 35px;
 }
+.ba-header__top {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.ba-header__top img {
+	width: 170px;
+	height: 90px;
+}
 .ba-nav-header {
-	display: inline-block;
 	vertical-align: top;
 	margin-top: 25px;
-    margin-left: 332px;
+	max-width: 450px;
+}
+.ba-nav-header ul {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .ba-nav-header li {
-	display: inline-block;
 	width: 95px;
 	font-family: Lato, sans-serif;
 	text-align: center;
+	margin-bottom: 15px;
 }
 .ba-nav-header li:after {
 	content: "";
@@ -293,11 +308,13 @@ h2 {
 .ba-contact input:hover, input:active, input:focus {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.ba-contact .ba-contact-user, .ba-contact-email {
-	display: inline-block;
+.ba-contact-user__inner {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
 .ba-contact-input-user, .ba-contact-input-email {
-	width: 285px;
+	width: 48%;
 	height: 35px;
 }
 .ba-contact-input-user {
@@ -307,15 +324,12 @@ h2 {
 	padding-left: 45px;
 }
 .ba-contact-input-email {
-	margin-left: 18px;
 	background-image: url(../imgs/icon-email.png);
 	background-repeat: no-repeat;
 	background-size: 35px 31px;
 	padding-left: 45px;
 }
-.ba-contact-mail {
-	position: relative;
-}
+
 .ba-contact-textarea-mail {
 	margin-top: 20px;
 	width: 100%;
